@@ -2,9 +2,9 @@
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import PlayerDevelopment from "@/components/PlayerDevelopment";
 import OfferSection from "@/components/OfferSection";
 import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
 import ContactSection from "@/components/ContactSection";
 import { motion } from "framer-motion";
 
@@ -13,9 +13,9 @@ export default function Home() {
     <main className="min-h-screen bg-white text-black overflow-x-hidden selection:bg-black selection:text-white">
       <Navbar />
       <Hero />
+      <PlayerDevelopment />
       <OfferSection />
       <Testimonials />
-      <FAQ />
       <ContactSection />
       
       <motion.footer 
