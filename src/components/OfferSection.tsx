@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function OfferSection() {
@@ -41,9 +42,9 @@ export default function OfferSection() {
         className="flex justify-between items-center mb-16 border-t pt-8 border-gray-200"
       >
         <h2 className="text-[40px] md:text-[48px] font-medium tracking-tight uppercase">what we offer</h2>
-        <button className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase">
+        <Link href="/contact" className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase">
           Book Now
-        </button>
+        </Link>
       </motion.div>
 
       <motion.div 
@@ -107,9 +108,9 @@ export default function OfferSection() {
         className="flex justify-between items-center mb-16"
       >
         <h2 className="text-[40px] md:text-[48px] font-medium tracking-tight uppercase">results won't vary</h2>
-        <button className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase">
+        <Link href="/contact" className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase">
           Book Now
-        </button>
+        </Link>
       </motion.div>
 
       <motion.div 

@@ -66,7 +66,7 @@ export default function About() {
           >
             <h2 className="text-[30px] md:text-[48px] font-medium tracking-tight uppercase">about.</h2>
             <Link 
-              href="/#contact"
+              href="/contact"
               className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase"
             >
               Book Now
@@ -89,10 +89,10 @@ export default function About() {
           >
             <div className="relative aspect-[2/3] bg-gray-100 overflow-hidden">
               <Image
-                src="/hero-image.png"
+                src="/43j35KJKSENtZOUEajvqven2vA.avif"
                 alt="Yusuf Shehata"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -116,50 +116,6 @@ export default function About() {
             <p className="text-[20px] md:text-[24px] leading-[1.5] font-normal tracking-normal text-gray-700 max-w-5xl">
               Our goal is simple: develop players the right way. No shortcuts. Just disciplined work and real growth.
             </p>
-          </motion.div>
-        </motion.div>
-      </section>
-
-      {/* Divider */}
-      <div className="border-t border-gray-200"></div>
-
-      {/* Services Section */}
-      <section className="py-24 px-4 md:px-8 max-w-[1400px] mx-auto">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={staggerContainer}
-        >
-          <motion.h2
-            variants={fadeInUp}
-            className="text-[30px] md:text-[48px] font-medium tracking-tight mb-16 uppercase"
-          >
-            transition into high school, d3 to d1, etc.
-          </motion.h2>
-
-          <motion.div
-            variants={fadeInUp}
-            className="grid grid-cols-1 md:grid-cols-2 gap-8"
-          >
-            <div className="relative aspect-[1.14] bg-gray-100 overflow-hidden">
-              <Image
-                src="/Screenshot 2025-12-31 at 2.04.26 PM.png"
-                alt="Training"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
-            <div className="relative aspect-[1.03] bg-gray-100 overflow-hidden">
-              <Image
-                src="/Screenshot 2025-12-31 at 11.23.06 AM.png"
-                alt="Training"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-            </div>
           </motion.div>
         </motion.div>
       </section>

@@ -23,7 +23,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-32 px-4 md:px-8 max-w-[1400px] mx-auto min-h-screen flex flex-col justify-center">
+    <section id="contact" className="pt-48 md:pt-52 pb-32 px-4 md:px-8 max-w-[1400px] mx-auto min-h-screen flex flex-col justify-center">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
         <motion.div 
           initial="hidden"

@@ -25,9 +25,9 @@ export default function Navbar() {
       
       <div className="flex items-center gap-8">
         <div className="hidden md:flex gap-8 text-sm font-bold tracking-widest uppercase">
-          <Link href="/#contact" className="hover:opacity-50 transition-opacity">Book</Link>
+          <Link href="/" className="hover:opacity-50 transition-opacity">Home</Link>
           <Link href="/about" className="hover:opacity-50 transition-opacity">About</Link>
-          <Link href="/#contact" className="hover:opacity-50 transition-opacity">Contact</Link>
+          <Link href="/contact" className="hover:opacity-50 transition-opacity">Contact</Link>
         </div>
         <button className="p-1 hover:opacity-50 transition-opacity" aria-label="Menu">
             <div className="grid grid-cols-2 gap-[3px] w-5 h-5">
