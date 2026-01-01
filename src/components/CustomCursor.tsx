@@ -40,43 +40,36 @@ export default function CustomCursor() {
       transition={{ duration: 0 }}
     >
       <svg
-        width="20"
-        height="20"
+        width="24"
+        height="24"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="opacity-40"
+        className="opacity-70"
       >
-        <circle
-          cx="12"
-          cy="12"
-          r="10.5"
-          stroke="black"
-          strokeWidth="1"
-          fill="none"
+        {/* The Ball */}
+        <circle cx="12" cy="12" r="11" stroke="black" strokeWidth="1.2" />
+        
+        {/* Horizontal Seam */}
+        <path d="M 1 12 H 23" stroke="black" strokeWidth="1" />
+        
+        {/* Vertical Seam */}
+        <path d="M 12 1 V 23" stroke="black" strokeWidth="1" />
+        
+        {/* Left Curve */}
+        <path 
+          d="M 5 4.5 C 9 8, 9 16, 5 19.5" 
+          stroke="black" 
+          strokeWidth="1" 
+          strokeLinecap="round" 
         />
-        <path
-          d="M12 2 C8 2, 5.5 5, 5.5 8.5 C5.5 12, 8 14.5, 12 14.5 C16 14.5, 18.5 12, 18.5 8.5 C18.5 5, 16 2, 12 2 Z"
-          stroke="black"
-          strokeWidth="0.8"
-          fill="none"
-          strokeLinecap="round"
-        />
-        <path
-          d="M12 2 C8 2, 5.5 5, 5.5 8.5 C5.5 12, 8 14.5, 12 14.5 C16 14.5, 18.5 12, 18.5 8.5 C18.5 5, 16 2, 12 2 Z"
-          stroke="black"
-          strokeWidth="0.8"
-          fill="none"
-          strokeLinecap="round"
-          transform="rotate(120 12 12)"
-        />
-        <path
-          d="M12 2 C8 2, 5.5 5, 5.5 8.5 C5.5 12, 8 14.5, 12 14.5 C16 14.5, 18.5 12, 18.5 8.5 C18.5 5, 16 2, 12 2 Z"
-          stroke="black"
-          strokeWidth="0.8"
-          fill="none"
-          strokeLinecap="round"
-          transform="rotate(240 12 12)"
+        
+        {/* Right Curve */}
+        <path 
+          d="M 19 4.5 C 15 8, 15 16, 19 19.5" 
+          stroke="black" 
+          strokeWidth="1" 
+          strokeLinecap="round" 
         />
       </svg>
     </motion.div>
