@@ -32,14 +32,14 @@ export default function OfferSection() {
   };
 
   return (
-    <section className="py-24 px-4 md:px-8 max-w-[1400px] mx-auto">
+    <section className="py-32 px-4 md:px-8 max-w-[1400px] mx-auto">
       {/* What We Offer Section */}
       <motion.div 
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={fadeInUp}
-        className="flex justify-between items-center mb-16 border-t pt-8 border-gray-200"
+        className="flex justify-between items-center mb-20 pt-12"
       >
         <h2 className="text-[40px] md:text-[48px] font-medium tracking-tight uppercase">what we offer</h2>
         <Link href="/contact" className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase">
@@ -52,7 +52,7 @@ export default function OfferSection() {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={fadeInUp}
-        className="mb-24"
+        className="mb-32"
       >
         <p className="text-[28px] md:text-[32px] leading-[1.4] font-normal tracking-normal max-w-6xl">
           I offer structured training programs designed for players at every level, 
@@ -62,7 +62,7 @@ export default function OfferSection() {
       </motion.div>
 
       {/* Image and Details Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-32">
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -105,7 +105,7 @@ export default function OfferSection() {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={fadeInUp}
-        className="flex justify-between items-center mb-16"
+        className="flex justify-between items-center mb-20 border-t border-black/10 pt-12"
       >
         <h2 className="text-[40px] md:text-[48px] font-medium tracking-tight uppercase">results won't vary</h2>
         <Link href="/contact" className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase">
