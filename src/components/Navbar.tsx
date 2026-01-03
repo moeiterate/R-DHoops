@@ -12,7 +12,7 @@ export default function Navbar() {
     <motion.nav 
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: [0.42, 0, 0.58, 1] }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
       className="fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 bg-white/80 backdrop-blur-md z-50"
     >
       <Link href="/" className="flex items-center group">
@@ -33,7 +33,7 @@ export default function Navbar() {
               initial={{ opacity: 0, x: 20, filter: 'blur(10px)' }}
               animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
               exit={{ opacity: 0, x: 20, filter: 'blur(10px)' }}
-              transition={{ duration: 0.5, ease: [0.42, 0, 0.58, 1] }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               className="flex gap-8 text-[11px] font-bold tracking-[0.2em] uppercase"
             >
               <Link href="/" className="hover:opacity-50 transition-opacity">Home</Link>

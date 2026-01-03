@@ -17,7 +17,7 @@ export default function OfferSection() {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.8, ease: [0.42, 0, 0.58, 1] }
+      transition: { duration: 0.8, ease: "easeOut" }
     }
   };
 
