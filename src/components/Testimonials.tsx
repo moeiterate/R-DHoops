@@ -9,7 +9,7 @@ export default function Testimonials() {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.8 }
     }
   };
 
