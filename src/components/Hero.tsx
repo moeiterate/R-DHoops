@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import EmailCopy from '@/components/EmailCopy';
 
 export default function Hero() {
   const containerVariants = {
@@ -58,13 +59,11 @@ export default function Hero() {
               className="mt-20 max-w-[800px]"
             >
               <div className="mb-6">
-                <a href="mailto:yusufsahs14@gmail.com" className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-[0.2em] opacity-40 hover:opacity-100 transition-opacity">
-                  yusufsahs14@gmail.com
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                  </svg>
-                </a>
+                <EmailCopy 
+                  email="yusufsahs14@gmail.com" 
+                  className="text-[10px] font-mono uppercase tracking-[0.2em] opacity-40 hover:opacity-100"
+                  iconSize={10}
+                />
               </div>
               <div>
                 <p className="text-[32px] md:text-[44px] leading-[1.1] font-medium tracking-[-0.04em] text-balance">

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import EmailCopy from '@/components/EmailCopy';
 
 export default function ContactSection() {
   const fadeInUp = {
@@ -33,7 +34,7 @@ export default function ContactSection() {
     
     try {
       // This will be the Google Apps Script URL
-      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxDfpcrv-0DBTVq5ADupKAAo4mDX65gChMt37GiQh-wnZZBaXIuEDmI-o8Y1m1jgaRM/exec';
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyxlqUyB31kL8TIm_V3IbDHGSMwgk7ajriXInkAX3eOKqUf7nZoBFC5wnvnvKY-oZVJ/exec';
       
       await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
@@ -62,17 +63,16 @@ export default function ContactSection() {
             <span className="block">CONTACT</span>
             </motion.h2>
             
-            <motion.a 
+            <motion.div 
               variants={fadeInUp}
-              href="mailto:yusufsahs14@gmail.com" 
-              className="hidden lg:flex items-center gap-2 text-xl font-medium hover:underline mt-auto"
+              className="hidden lg:flex mt-auto"
             >
-                yusufsahs14@gmail.com
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                </svg>
-            </motion.a>
+                <EmailCopy 
+                  email="yusufsahs14@gmail.com" 
+                  className="text-xl font-medium hover:underline"
+                  iconSize={20}
+                />
+            </motion.div>
         </motion.div>
 
         <motion.form 
@@ -133,20 +133,19 @@ export default function ContactSection() {
             )}
         </motion.form>
         
-        <motion.a 
+        <motion.div 
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeInUp}
-          href="mailto:yusufsahs14@gmail.com" 
-          className="flex lg:hidden items-center gap-2 text-xl font-medium hover:underline mt-8"
+          className="flex lg:hidden mt-8"
         >
-            yusufsahs14@gmail.com
-             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-            </svg>
-        </motion.a>
+            <EmailCopy 
+              email="yusufsahs14@gmail.com" 
+              className="text-xl font-medium hover:underline"
+              iconSize={20}
+            />
+        </motion.div>
       </div>
     </section>
   )
