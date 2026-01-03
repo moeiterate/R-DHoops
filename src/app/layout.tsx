@@ -16,8 +16,27 @@ const fragmentMono = Fragment_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "R&D Hoops",
-  description: "Elite basketball training.",
+  title: "R&D Hoops | Elite Basketball Training",
+  description: "International professional experience meets cutting-edge development. Yusuf Shehata brings elite-level detail to players of all levels.",
+  openGraph: {
+    title: "R&D Hoops | Elite Basketball Training",
+    description: "International professional experience meets cutting-edge development. Yusuf Shehata brings elite-level detail to players of all levels.",
+    images: [
+      {
+        url: '/hero-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Yusuf Shehata - R&D Hoops',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "R&D Hoops | Elite Basketball Training",
+    description: "International professional experience meets cutting-edge development.",
+    images: ['/hero-image.png'],
+  },
 };
 
 export default function RootLayout({
