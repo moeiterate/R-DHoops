@@ -21,12 +21,12 @@ export default function Navbar() {
           alt="R&D Hoops Logo"
           width={100}
           height={50}
-          className="h-auto w-auto object-contain"
+          className="h-auto w-auto object-contain max-w-[80px] sm:max-w-[100px]"
           priority
         />
       </Link>
       
-      <div className="flex items-center gap-8">
+      <div className="flex items-center gap-4 sm:gap-8">
         <AnimatePresence>
           {isOpen && (
             <motion.div 
@@ -34,11 +34,11 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0, filter: 'blur(0px)' }}
               exit={{ opacity: 0, x: 20, filter: 'blur(10px)' }}
               transition={{ duration: 0.5 }}
-              className="flex gap-8 text-[11px] font-bold tracking-[0.2em] uppercase"
+              className="flex gap-4 sm:gap-8 text-[10px] sm:text-[11px] font-bold tracking-[0.2em] uppercase"
             >
-              <Link href="/" className="hover:opacity-50 transition-opacity">Home</Link>
-              <Link href="/about" className="hover:opacity-50 transition-opacity">About</Link>
-              <Link href="/contact" className="hover:opacity-50 transition-opacity">Contact</Link>
+              <Link href="/" className="hover:opacity-50 transition-opacity whitespace-nowrap">Home</Link>
+              <Link href="/about" className="hover:opacity-50 transition-opacity whitespace-nowrap">About</Link>
+              <Link href="/contact" className="hover:opacity-50 transition-opacity whitespace-nowrap">Contact</Link>
             </motion.div>
           )}
         </AnimatePresence>

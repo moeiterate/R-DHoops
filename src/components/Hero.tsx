@@ -27,7 +27,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="pt-48 md:pt-52 pb-20 px-4 md:px-8 max-w-[1400px] mx-auto">
+    <section className="pt-32 sm:pt-40 md:pt-52 pb-20 px-4 md:px-8 max-w-[1400px] mx-auto">
       <motion.div 
         className="relative"
         initial="hidden"
@@ -39,13 +39,13 @@ export default function Hero() {
             <div className="flex flex-col">
               <motion.h2 
                 variants={itemVariants}
-                className="text-[90px] md:text-[120px] leading-[0.85] font-[700] tracking-[-0.05em] uppercase text-black mb-2"
+                className="text-[48px] sm:text-[64px] md:text-[120px] leading-[0.85] font-[700] tracking-[-0.05em] uppercase text-black mb-2 break-words"
               >
                 WELCOME TO
               </motion.h2>
               <motion.h1 
                 variants={itemVariants}
-                className="text-[160px] md:text-[220px] leading-[0.95] font-[700] tracking-[-0.09em] uppercase text-black mb-0"
+                className="text-[72px] sm:text-[96px] md:text-[220px] leading-[0.95] font-[700] tracking-[-0.09em] uppercase text-black mb-0 break-words"
               >
                 R&D HOOPS
               </motion.h1>
@@ -56,17 +56,17 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4 }}
-              className="mt-20 max-w-[800px]"
+              className="mt-12 sm:mt-16 md:mt-20 max-w-[800px]"
             >
               <div className="mb-6">
                 <EmailCopy 
                   email="yusufsahs14@gmail.com" 
-                  className="text-[10px] font-mono uppercase tracking-[0.2em] opacity-40 hover:opacity-100"
+                  className="text-[8px] sm:text-[10px] font-mono uppercase tracking-[0.2em] opacity-40 hover:opacity-100 break-all"
                   iconSize={10}
                 />
               </div>
               <div>
-                <p className="text-[32px] md:text-[44px] leading-[1.1] font-medium tracking-[-0.04em] text-balance">
+                <p className="text-[18px] sm:text-[24px] md:text-[44px] leading-[1.1] font-medium tracking-[-0.04em] text-balance">
                   Welcome to the Lab. International professional experience meets cutting-edge development. 
                   Yusuf Shehata brings elite-level detail to players of all levels. Game-real reps. 
                   Repeatable habits. Measurable results.
@@ -78,16 +78,16 @@ export default function Hero() {
           {/* Image positioned to wrap with text */}
           <motion.div 
             variants={itemVariants}
-            className="mt-12 md:mt-0 md:col-span-4 flex justify-end"
+            className="mt-12 md:mt-0 md:col-span-4 flex justify-start md:justify-end"
           >
-            <div className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] overflow-hidden rounded-[140px]">
+            <div className="relative w-[200px] h-[200px] sm:w-[240px] sm:h-[240px] md:w-[320px] md:h-[320px] overflow-hidden rounded-full">
               <Image
                 src="/hero-image.png"
                 alt="Yusuf Shehata"
                 fill
                 className="object-cover object-top"
                 unoptimized
-                sizes="(max-width: 768px) 100vw, 320px"
+                sizes="(max-width: 640px) 200px, (max-width: 768px) 240px, 320px"
               />
             </div>
           </motion.div>

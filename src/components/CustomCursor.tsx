@@ -6,8 +6,19 @@ import { motion, useMotionValue } from 'framer-motion';
 export default function CustomCursor() {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
+    // Detect if device supports touch
+    const checkTouchDevice = () => {
+      return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+    };
+
+    if (checkTouchDevice()) {
+      setIsTouchDevice(true);
+      return;
+    }
+
     const moveCursor = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
       if (!isVisible) setIsVisible(true);
@@ -26,6 +37,11 @@ export default function CustomCursor() {
       document.removeEventListener('mouseenter', handleMouseEnter);
     };
   }, [isVisible]);
+
+  // Don't render on touch devices
+  if (isTouchDevice) {
+    return null;
+  }
 
   return (
     <motion.div

@@ -31,7 +31,7 @@ export default function PlayerDevelopment() {
         variants={fadeInUp}
         className="mb-20 pt-12"
       >
-        <h2 className="text-[40px] md:text-[48px] font-medium tracking-tight uppercase">
+        <h2 className="text-[28px] sm:text-[36px] md:text-[48px] font-medium tracking-tight uppercase">
           player development
         </h2>
       </motion.div>
@@ -46,7 +46,7 @@ export default function PlayerDevelopment() {
         <div className="space-y-12">
           <motion.p 
             variants={fadeInUp}
-            className="text-[32px] md:text-[48px] leading-[1.1] font-medium tracking-[-0.04em]"
+            className="text-[20px] sm:text-[24px] md:text-[48px] leading-[1.1] font-medium tracking-[-0.04em]"
           >
             Player development isn't about doing more drills. It's about doing the right work, the right way.
           </motion.p>

@@ -30,7 +30,7 @@ export default function Testimonials() {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={fadeInUp}
-        className="text-[40px] md:text-[48px] font-medium tracking-tight mb-16 uppercase"
+        className="text-[28px] sm:text-[36px] md:text-[48px] font-medium tracking-tight mb-16 uppercase"
       >
         Testimonials
       </motion.h2>
@@ -54,8 +54,8 @@ export default function Testimonials() {
             />
           </div>
           <div>
-            <h3 className="text-[56px] md:text-[64px] font-normal mb-4 leading-tight">Henrik Rödl</h3>
-            <p className="text-[22px] md:text-[24px] leading-[1.3] font-normal tracking-normal text-gray-700">
+            <h3 className="text-[36px] sm:text-[48px] md:text-[64px] font-normal mb-4 leading-tight">Henrik Rödl</h3>
+            <p className="text-[16px] sm:text-[18px] md:text-[24px] leading-[1.3] font-normal tracking-normal text-gray-700">
               Few players I have been around ever worked as hard as him. Extra work he was there, professional attitude that is him. A great teammate but also very coachable and self motivated to excel in all aspects of the game! Yusuf Shehata is an absolute joy to be around and to work with! I wish him nothing but the best for his next steps in his career, knowing that he will do well no matter what he chooses to do.
             </p>
           </div>
@@ -73,8 +73,8 @@ export default function Testimonials() {
               />
            </div>
            <div>
-            <h3 className="text-[56px] md:text-[64px] font-normal mb-4 leading-tight">Anas Osama</h3>
-            <p className="text-[22px] md:text-[24px] leading-[1.3] font-normal tracking-normal text-gray-700">
+            <h3 className="text-[36px] sm:text-[48px] md:text-[64px] font-normal mb-4 leading-tight">Anas Osama</h3>
+            <p className="text-[16px] sm:text-[18px] md:text-[24px] leading-[1.3] font-normal tracking-normal text-gray-700">
               Shehata was one of the funniest, most motivated, and hardest-working teammates I've ever had. His talent on the court was only matched by how good of a person he is off it. I have no doubt he'll be an amazing trainer and inspire everyone.
             </p>
            </div>

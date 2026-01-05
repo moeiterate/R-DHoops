@@ -39,10 +39,10 @@ export default function OfferSection() {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={fadeInUp}
-        className="flex justify-between items-center mb-20 pt-12"
+        className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-20 pt-12"
       >
-        <h2 className="text-[40px] md:text-[48px] font-medium tracking-tight uppercase">what we offer</h2>
-        <Link href="/contact" className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase">
+        <h2 className="text-[28px] sm:text-[36px] md:text-[48px] font-medium tracking-tight uppercase">what we offer</h2>
+        <Link href="/contact" className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase whitespace-nowrap">
           Book Now
         </Link>
       </motion.div>
@@ -54,7 +54,7 @@ export default function OfferSection() {
         variants={fadeInUp}
         className="mb-32"
       >
-        <p className="text-[28px] md:text-[32px] leading-[1.4] font-normal tracking-normal max-w-6xl">
+        <p className="text-[18px] sm:text-[22px] md:text-[32px] leading-[1.4] font-normal tracking-normal max-w-6xl">
           I offer structured training programs designed for players at every level, 
           from youth development to elite competition. Each session combines systematic 
           skill building with game-application drills that translate directly to court performance.
@@ -105,10 +105,10 @@ export default function OfferSection() {
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
         variants={fadeInUp}
-        className="flex justify-between items-center mb-20 border-t border-black/10 pt-12"
+        className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-20 border-t border-black/10 pt-12"
       >
-        <h2 className="text-[40px] md:text-[48px] font-medium tracking-tight uppercase">results won't vary</h2>
-        <Link href="/contact" className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase">
+        <h2 className="text-[28px] sm:text-[36px] md:text-[48px] font-medium tracking-tight uppercase">results won't vary</h2>
+        <Link href="/contact" className="px-6 py-2 bg-gray-100 text-sm font-bold tracking-wide hover:bg-gray-200 transition-colors uppercase whitespace-nowrap">
           Book Now
         </Link>
       </motion.div>

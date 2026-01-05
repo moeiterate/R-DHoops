@@ -58,7 +58,7 @@ export default function ContactSection() {
           variants={staggerContainer}
           className="flex flex-col justify-between"
         >
-            <motion.h2 variants={fadeInUp} className="text-[12.5vw] lg:text-[7vw] leading-[0.8] font-[600] tracking-[-0.04em] uppercase mb-12">
+            <motion.h2 variants={fadeInUp} className="text-[48px] sm:text-[64px] md:text-[12.5vw] lg:text-[7vw] leading-[0.8] font-[600] tracking-[-0.04em] uppercase mb-12 break-words">
             <span className="block">GET IN</span>
             <span className="block">CONTACT</span>
             </motion.h2>
